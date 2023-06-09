@@ -6,14 +6,16 @@ if(process.env.NODE_ENV != 'production'){
 
 //Import dependencies
 const express = require('express');
+const cors = require('cors');
 const connectToDb = require('./config/connectToDb');
 const notesController = require('./controllers/notesController');
 
 //Create our express app
-const app = express()
+const app = express();
 
 //Configure express app
 app.use(express.json());
+app.use(cors());
 
 //Connect to database
 connectToDb();
