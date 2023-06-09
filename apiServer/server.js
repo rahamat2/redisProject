@@ -1,3 +1,9 @@
+//Load env variables
+if(process.env.NODE_ENV != 'production'){
+    require('dotenv').config();
+}
+
+
 //Import dependencies
 const express = require('express');
 
@@ -10,4 +16,4 @@ app.get('/', (req,res)=>{
 });
 
 //Start our server
-app.listen(3000);
+app.listen(process.env.PORT);
