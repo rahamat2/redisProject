@@ -6,9 +6,13 @@ if(process.env.NODE_ENV != 'production'){
 
 //Import dependencies
 const express = require('express');
+const connectToDb = require('./config/connectToDb');
 
 //Create our express app
 const app = express()
+
+//Connect to database
+connectToDb();
 
 //Routing
 app.get('/', (req,res)=>{
