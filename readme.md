@@ -4,6 +4,8 @@
 
 RedisCacheApp is a full stack application combining with a frontend named 'client' and a backend named 'apiServer'. MongoDb is used for the database and Redis is used for the chache server. When a data is searched from the client end, the apiServer checks the Redis cache. If it finds in cache, then responds with the data. If it does not find in cache, then searches the database and if the data is found, it responds with the data. This time it saves the data in cache.
 
+![RedisProject](redisProject.JPG)
+
 ## Table of Contents
 
 - [Installation](#installation)
