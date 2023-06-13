@@ -26,7 +26,7 @@ To install it, follow these steps:
 
 ## Configuration
 
-1. Configure the redis server to run at the default port(6375).
+1. Configure the redis server to run at the default port (6379).
 2. Change the variable DB_URL in .env file, with MongoDB connection string. The .env file can be found in 'apiServer' folder.
 
 ## Run
